@@ -33,7 +33,10 @@ public class WebsiteNews {
 
             if(isEqualUser && isEqualPass) {
                 System.out.println("Login Sukses");
-                break;
+                System.out.println("Berita apa yang ingin kamu baca ?");
+                System.out.println("1. Demo UU Ciptaker ");
+                System.out.println("2. Update Covid-19 ");
+                System.out.println("3. Resesi Indonesia 2020 ");
 
             }
             else if(notEqualUser && notEqualPass) {
