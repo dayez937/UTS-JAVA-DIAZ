@@ -3,15 +3,14 @@ package com.utsjavaproject;
 public class Login {
     private String Username;
     private String Password;
-    private String InputUser;
-    private String InputPass;
+    private String inputUser;
+    private String inputPass;
 
-    public void setUsername(String Username) {
+    Login (String Username, String Password, String inputUser, String inputPass){
         this.Username = Username;
-    }
-
-    public void setPassword(String Password) {
         this.Password = Password;
+        this.inputUser = inputUser;
+        this.inputPass = inputPass;
     }
 
     public String getUsername() {
@@ -22,19 +21,11 @@ public class Login {
         return Password;
     }
 
-    public void setInputUser(String InputUser) {
-        this.InputUser = InputUser;
-    }
-
-    public void setInputPass(String InputPass) {
-        this.InputPass = InputPass;
-    }
-
     public String getInputUser() {
-        return InputUser;
+        return inputUser;
     }
 
     public String getInputPass() {
-        return InputPass;
+        return inputPass;
     }
 }

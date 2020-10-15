@@ -5,24 +5,26 @@ import java.util.Scanner;
 public class RegisterandLogin {
 
     public static void main(String[] args) {
-        Login login = new Login();
+
         Scanner keyboardInput = new Scanner(System.in);
-        int gagal = 0;
+        int gagal = 1;
 
         System.out.print("Selamat datang di Website ini, silahkan Sign Up jika ingin melihat berita terbaru \n");
         System.out.print("\n");
 
         System.out.print("Masukkan Username : ");
-        login.setUsername(keyboardInput.nextLine());
+        String Username = keyboardInput.nextLine();
         System.out.print("Masukkan Password : ");
-        login.setPassword(keyboardInput.nextLine());
+        String Password = keyboardInput.nextLine();
+
         System.out.print("Proses Sign Up selesai, silahkan login \n");
 
         for(int i = 1; i <= 3; i++) {
             System.out.print("Masukkan Username: ");
-            login.setInputUser(keyboardInput.nextLine());
+            String inputUser = keyboardInput.nextLine();
             System.out.print("Masukkan Password : ");
-            login.setInputPass(keyboardInput.nextLine());
+            String inputPass = keyboardInput.nextLine();
+            Login login = new Login(Username, Password, inputUser, inputPass);
 
             boolean isEqualUser  = login.getUsername().equals(login.getInputUser());
             boolean isEqualPass	 = login.getPassword().equals(login.getInputPass());
@@ -32,6 +34,7 @@ public class RegisterandLogin {
             if(isEqualUser && isEqualPass) {
                 System.out.println("Login Sukses");
                 break;
+
             }
             else if(notEqualUser && notEqualPass) {
                 System.out.println("Login Gagal, silahkan coba lagi");
