@@ -2,7 +2,7 @@ package com.utsjavaproject;
 
 import java.util.Scanner;
 
-public class RegisterandLogin {
+public class WebsiteNews {
 
     public static void main(String[] args) {
 
