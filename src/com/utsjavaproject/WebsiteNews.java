@@ -9,7 +9,7 @@ public class WebsiteNews {
         Scanner keyboardInput = new Scanner(System.in);
         int gagal = 1;
 
-        System.out.print("Selamat datang di Website ini, silahkan Sign Up jika ingin melihat berita terbaru \n");
+        System.out.print("Selamat datang di Website News, silahkan Sign Up jika ingin melihat berita terbaru \n");
         System.out.print("\n");
 
         System.out.print("Masukkan Username : ");
@@ -17,7 +17,7 @@ public class WebsiteNews {
         System.out.print("Masukkan Password : ");
         String Password = keyboardInput.nextLine();
 
-        System.out.print("Proses Sign Up selesai, silahkan login \n");
+        System.out.print("Proses Sign Up selesai, silahkan Login \n");
 
         for(int i = 1; i <= 3; i++) {
             System.out.print("Masukkan Username: ");
@@ -37,6 +37,14 @@ public class WebsiteNews {
                 System.out.println("1. Demo UU Ciptaker ");
                 System.out.println("2. Update Covid-19 ");
                 System.out.println("3. Resesi Indonesia 2020 ");
+                int pilihBerita = keyboardInput.nextInt();
+                if(pilihBerita == 1){
+                    BeritaDemo demo = new BeritaDemo();
+                    demo.Judul();
+                    demo.Isi();
+                    demo.Author();
+                    break;
+                }
 
             }
             else if(notEqualUser && notEqualPass) {
