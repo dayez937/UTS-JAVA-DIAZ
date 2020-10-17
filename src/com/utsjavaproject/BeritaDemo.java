@@ -34,6 +34,6 @@ public class BeritaDemo implements Berita {
 
     @Override
     public void Author() {
-        System.out.println("Tim Detikcom, CNBC Indonesia");
+        System.out.println("Reporter : Tim Detikcom, CNBC Indonesia");
     }
 }

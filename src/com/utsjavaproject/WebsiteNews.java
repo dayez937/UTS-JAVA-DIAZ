@@ -45,7 +45,18 @@ public class WebsiteNews {
                     demo.Author();
                     break;
                 }
-
+                if(pilihBerita == 2){
+                    BeritaCovid covid = new BeritaCovid();
+                    covid.Judul();
+                    covid.Isi();
+                    covid.Author();
+                }
+                if(pilihBerita == 3){
+                    BeritaResesi resesi = new BeritaResesi();
+                    resesi.Judul();
+                    resesi.Isi();
+                    resesi.Author();
+                }
             }
             else if(notEqualUser && notEqualPass) {
                 System.out.println("Login Gagal, silahkan coba lagi");
